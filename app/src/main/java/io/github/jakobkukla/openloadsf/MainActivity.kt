@@ -18,9 +18,5 @@ class MainActivity : AppCompatActivity() {
     fun fetchLink(view: View) {
         val editText = findViewById<EditText>(R.id.editText1)
         val link = editText.text.toString()
-        val intent = Intent(this, FetchStreamActivity::class.java).apply {
-            putExtra(EXTRA_LINK, link)
-        }
-        startActivity(intent)
     }
 }
